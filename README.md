@@ -86,8 +86,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
-            python manage.py test
+            ~/.local/bin/pytest
 
       - store_artifacts:
           path: test-reports
